@@ -1,1 +1,0 @@
-https://GITHUB-pythonchik0.github.io/rsschool-cv/cv
