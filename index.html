@@ -3,8 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <title>cv</title>
 </head>
 <body>
+    <main>
+        <header>
+            <nav>
+                <a href="Contacts">Contacts</a>
+                <a href="Summary">Summary</a>
+                <a href="Skills">Skills</a>
+                <a href="Code">Code</a>
+                <a href="Projects">Projects</a>
+                <a href="Education">Education</a>
+                <a href="English">English</a>
+            </nav>
+        </header>
+        <img src="assets/avatar.jpg" alt="avatar" width="320" height="240">
+
+        <h1>Averin Nikita</h1>
+        <p>FEATURE JUNIOR FRONT-END DEVELOPER</p>
+
+        <section>
+            <h3>CONTACTS</h3>
+            <ul>
+                <li>Stavropol, Russia</li>
+                <li>Telegram: <a href="https://t.me/nemnogopohuy">nemnogopohuy</a></li>
+                <li>Discord: pythonchik0</li>
+                <li>GitHub: <a href="https://github.com/pythonchik0">pythonchik0</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>ABOUT ME</h3>
+            <p>
+                I am currently in my 2nd year of college.
+                I believe that the college program
+                will not provide the necessary skills to get
+                a job and I am not interested in the field that we are taught,
+                so I decided to study at the RS School at the same time. 
+                My goal is that I want to develop in the Front-end direction and,
+                depending on the value of my skills, get a job in a company.
+                Programmed in Python solving simple logic problems. 
+                I have basic Git skills.
+            </p>
+        </section>
+
+        <section>
+            <h3>SKILLS</h3>
+            <p>Base of Python</p>
+        </section>
+
+        <section>
+            <h3>CODE</h3>
+            <pre>
+                def caps(n):
+                    for i in range(len(n)):
+                        if i == 0:
+                            n[i] = chr(ord(n[i])-32)
+                        elif n[i] == ' ':
+                            n[i+1] = chr(ord(n[i+1])-32)
+                        return n
+                m = list(input())
+                print(''.join(caps(m)))
+            </pre>
+        </section>
+
+        <section>
+            <h3>PROJECTS</h3>
+            <p>CV (<a href="https://github.com/pythonchik0/rsschool-cv">link</a>)</p>
+        </section>
+
+        <section>
+            <h3>ENGLISH</h3>
+            <p>My English level is A1. I can understand simple speech and medium complexity text.</p>
+        </section>
+
+    </main>
+    <footer>
+        <time>2023</time>
+        <p>Averin Nikita</p>
+        <a href="https://rs.school/js/"><img src="assets/img/rolling-scopes-school.png"></a>
+    </footer>
 </body>
 </html>
