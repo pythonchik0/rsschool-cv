@@ -4,87 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="icon" href="assets/icons/favicon.ico" />
     <title>cv</title>
 </head>
 <body>
-    <main>
-        <header>
-            <nav>
-                <a href="Contacts">Contacts</a>
-                <a href="Summary">Summary</a>
-                <a href="Skills">Skills</a>
-                <a href="Code">Code</a>
-                <a href="Projects">Projects</a>
-                <a href="Education">Education</a>
-                <a href="English">English</a>
-            </nav>
-        </header>
-        <img src="assets/avatar.jpg" alt="avatar" width="320" height="240">
+    <header class="header">
+        <div class="container header-container">
+            <a href="file:///C:/Users/%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D0%B0/Desktop/projects/rsschool-cv-html/index.html" rel="home">
+                <img src="assets/icons/aver.png" alt="text" class="main-text" width="201" height="100">
+            </a> 
+                <nav class="nav">
+                    <div class="burger-menu">
+                        <img src="assets/svg/burger-menu.svg" alt="burger-menu" class="burger" width="10" height="10">
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                        <li class="nav-item"><a href="#about-me" class="nav-link">Personal</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
 
-        <h1>Averin Nikita</h1>
-        <p>FEATURE JUNIOR FRONT-END DEVELOPER</p>
+    <main class="main">
+        <div class="container main-container">
+            <section class="section-profile">
+                <img src="assets/img/avatar.jpg" alt="avatar" class="big-img" width="480" height="263">
+                <div class="profile-title">
+                    <h1 class="profile-main-title">Hello,<br>I'm Nikita<br>Averin</h1>
+                    <div class="separate-line"></div>  
+                    <h3 class="profile-subtitle">FEATURE JUNIOR FRONT-END DEVELOPER</h3>  
+                </div>
+            </section> 
 
-        <section>
-            <h3>CONTACTS</h3>
-            <ul>
-                <li>Stavropol, Russia</li>
-                <li>Telegram: <a href="https://t.me/nemnogopohuy">nemnogopohuy</a></li>
-                <li>Discord: pythonchik0</li>
-                <li>GitHub: <a href="https://github.com/pythonchik0">pythonchik0</a></li>
-            </ul>
-        </section>
+            <section class="section" id="contacts">
+                <h3 class="title-style">CONTACTS</h3>
+                <ul>
+                    <li class="list-contacts"><img src="assets/icons/location.png" alt="location-icon" class="size-icons">Stavropol, Russia</li>
+                    <li class="list-contacts"><img src="assets/svg/telegram.svg" alt="location-icon" class="size-icons">Telegram: <a href="https://t.me/nemnogopohuy">nemnogopohuy</a></li>
+                    <li class="list-contacts"><img src="assets/svg/discord.svg" alt="location-icon" class="size-icons">Discord: pythonchik0</li>
+                    <li class="list-contacts"><img src="assets/svg/github.svg" alt="location-icon" class="size-icons">GitHub: <a href="https://github.com/pythonchik0">pythonchik0</a></li>
+                </ul>
+            </section>
+    
+            <section class="section" id="about-me">
+                <h3 class="title-style">ABOUT ME</h3>
+                <p>
+                    I am currently in my 2nd year of college.
+                    I believe that the college program
+                    will not provide the necessary skills to get
+                    a job and I am not interested in the field that we are taught,
+                    so I decided to study at the RS School at the same time.
+                    <br>
+                    My goal is that I want to develop in the Front-end direction and,
+                    depending on the value of my skills, get a job in a company.
+                    Programmed in Python solving simple logic problems. 
+                    I have basic Git skills.
+                </p>
+            </section>
+            
+            <section class="section" id="skills">
+                <h3 class="title-style">SKILLS</h3>
+                <ul>
+                    <li>Base of Python</li>
+                    <li>Some HTML5</li>
+                    <li>Some CSS3</li>
+                </ul>
+            </section>
 
-        <section>
-            <h3>ABOUT ME</h3>
-            <p>
-                I am currently in my 2nd year of college.
-                I believe that the college program
-                will not provide the necessary skills to get
-                a job and I am not interested in the field that we are taught,
-                so I decided to study at the RS School at the same time. 
-                My goal is that I want to develop in the Front-end direction and,
-                depending on the value of my skills, get a job in a company.
-                Programmed in Python solving simple logic problems. 
-                I have basic Git skills.
-            </p>
-        </section>
+            <section class="section" id="code">
+                <h3 class="title-style">CODE</h3>
+                <pre>
+<code>
+def caps(n):
+    for i in range(len(n)):
+        if i == 0:
+            [i] = chr(ord(n[i])-32)
+        elif n[i] == ' ':
+            n[i+1] = chr(ord(n[i+1])-32)
+            return n
+m = list(input())
+print(''.join(caps(m)))
+</code>
+                </pre>
+            </section>
 
-        <section>
-            <h3>SKILLS</h3>
-            <p>Base of Python</p>
-        </section>
+            <section class="section section-projects" id="projects">
+                <h3 class="title-style">PROJECTS</h3>
+                <a href="https://github.com/pythonchik0/rsschool-cv">CV</a>
+            </section>
 
-        <section>
-            <h3>CODE</h3>
-            <pre>
-                def caps(n):
-                    for i in range(len(n)):
-                        if i == 0:
-                            n[i] = chr(ord(n[i])-32)
-                        elif n[i] == ' ':
-                            n[i+1] = chr(ord(n[i+1])-32)
-                        return n
-                m = list(input())
-                print(''.join(caps(m)))
-            </pre>
-        </section>
-
-        <section>
-            <h3>PROJECTS</h3>
-            <p>CV (<a href="https://github.com/pythonchik0/rsschool-cv">link</a>)</p>
-        </section>
-
-        <section>
-            <h3>ENGLISH</h3>
-            <p>My English level is A1. I can understand simple speech and medium complexity text.</p>
-        </section>
-
+            <section class="section section-english" id="english">
+                <h3 class="title-style">ENGLISH</h3>
+                <p>My English level is A1. I can understand simple speech and medium complexity text.</p>
+            </section>
+        </div>
     </main>
-    <footer>
-        <time>2023</time>
-        <p>Averin Nikita</p>
-        <a href="https://rs.school/js/"><img src="assets/img/rolling-scopes-school.png"></a>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="elements-position">
+                ©
+                <time>2023</time>
+                <!-- <img src="assets/icons/github.png" alt="github-icon" class="github-icon"> -->
+                <a href="https://github.com/pythonchik0">pythonchik0</a>  
+            </div>
+            <a class="rss" href="https://rs.school/js/"></a>
+        </div>
     </footer>
-</body>
+    </body>
 </html>
